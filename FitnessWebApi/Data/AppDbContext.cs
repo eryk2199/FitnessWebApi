@@ -24,11 +24,11 @@ public class AppDbContext : IdentityDbContext<IdentityUser>
             .HasConversion<string>();
     }
     
-    DbSet<Day> Days { get; set; }
-    DbSet<Meal> Meals { get; set; }
-    DbSet<Ingredient> Ingredients { get; set; }
+    public DbSet<Day> Days { get; set; }
+    public DbSet<Meal> Meals { get; set; }
+    public DbSet<Ingredient> Ingredients { get; set; }
     
-    DbSet<MealIngredients> MealIngredients { get; set; }
-    DbSet<DayMeals> DayMeals { get; set; }
+    public DbSet<MealIngredients> MealIngredients { get; set; }
+    public DbSet<DayMeals> DayMeals { get; set; }
 
 }
